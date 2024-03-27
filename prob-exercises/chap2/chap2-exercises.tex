@@ -1,0 +1,144 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm,amssymb}
+\usepackage[a4paper,left=25mm,right=25mm,top=30mm,bottom=30mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumerate} 
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{transparent} \usepackage{tikz} 
+\usepackage{cancel}
+\usepackage{parskip}
+\usepackage[condensed,light,math]{iwona}
+\usepackage[T1]{fontenc}
+
+\title{probability exercises}
+\author{emilianna louise abundo limlengco} 
+\date{\today} 
+
+\fboxsep=4pt
+\RenewDocumentCommand{\footnoterule}{}{\vfill\kern-3pt \hrule width 0.4\columnwidth\kern2.6pt} %yoinked from LSE
+
+\RenewDocumentCommand{\labelitemi}{}{$\rightarrow$}
+\RenewDocumentCommand{\labelenumi}{}{\colorbox{pink}{\textbf{\arabic{enumi}}}}
+\RenewDocumentCommand{\labelenumii}{}{\transparent{0.5}\colorbox{CornflowerBlue}{\transparent{1.0}\textbf{\alph{enumii}}}}
+
+\NewDocumentEnvironment{solution}{}{%
+    \RenewDocumentCommand{\qedsymbol}{}{$\blacksquare$}
+    \begin{proof}[Solution]
+}{\end{proof}}
+
+\begin{document} 
+
+\section*{How to Use this Reviewer}
+Hello! This is a compilation of solved exercises for chapter 2 of ``An introduction to mathematical statistics and its applications'' by Larsen and Marx, sixth ed. All of these exercises are taken straight from the book. 
+There are certain items that are much more difficult than normal, and are mostly for nerds like me to geek out about 
+on documents like these. I'll note when these items show up, so that you don't spend energy that you don't really need or want to trying to understand them.\par Normal items will look like this:\begin{enumerate} 
+    \item A very easy math problem. What's 1 + 1?
+\end{enumerate} 
+whereas difficult problems will be soulless, like this:\begin{enumerate}\setcounter{enumi}{1}
+    \renewcommand{\labelenumi}{\fcolorbox{magenta}{white}{\textbf{\arabic{enumi}}}}
+    \item A very difficult math problem. Prove that $\displaystyle \binom{2n}{n} < 2^{2n-2},~\forall n \geq 5$ using induction. 
+\end{enumerate} I might also include warnings in my \textbf{Nerd Interjections!}\par
+\parindent=25pt \begin{minipage}[t]{.14\textwidth}
+    \vspace{0pt}
+    \includegraphics[width=2cm]{nerd_maddy.png} 
+\end{minipage}%
+\fbox{
+\begin{minipage}[t]{.76\textwidth}
+    \vspace{0pt}
+    \textbf{Nerd Interjection!}\footnote{Image from @Ellem\_\_ on Twitter.} These sections are for me to remind you of some necessary information to solve the problems, elaborate on 
+    something that I think isn't all that clear with just pure math symbols, give a helpful theorem, be an annoying piece of shit, anything, really! Just think of it as a tips and tricks section. 
+\end{minipage}%
+}\parindent=0pt \par I also have another section called \textbf{Can we Prove it?} (unfortunately lacking a cute picture to go along with it), where I include some interesting, not really necessary, but 
+nonetheless relevant proofs. So far, these two are my only two gimmicks, but I might add more in the future.\par
+\fbox{\begin{minipage}[t]{0.98\textwidth}
+    \vspace{0pt} 
+    \textbf{Can we Prove it?} This is just a random proof I yoinked from our homeworks.\begin{proof} 
+        ($ \implies $) Let $ x \in (A \cap B) \setminus C $. Then, $ x \in (A \cap B)$ and $ x \notin C $. \\
+        \phantom{($ \implies $)} Since $x \in (A \cap B)$, $ x \in A$ and $ x \in B$. \\
+        \phantom{($ \implies $)} Since $x \in A$ and $x \notin C$, $x \in (A \setminus C) $. \\
+        \phantom{($ \implies $)} Since $x \in B$ and $x \notin C$, $x \in (B \setminus C) $. \\
+        \phantom{($ \implies $)} Thus, $x \in (A \setminus C) \cap (B \setminus C) $. \\ 
+        \\
+        ($ \impliedby $) Let $ x \in (A \setminus C) \cap (B \setminus C) $. Then, $ x \in (A \setminus C) $ and $ x \in (B \setminus C) $. \\ 
+        \phantom{($ \impliedby $)} Since $ x \in (A \setminus C) $, $ x \in A $ and $ x \notin C $. \\
+        \phantom{($ \impliedby $)} Since $ x \in (B \setminus C) $, $ x \in B $ and $ x \notin C $. \\
+        \phantom{($ \impliedby $)} Since $ x \in A $ and $ x \in B $, $ x \in (A \cap B) $. \\
+        \phantom{($ \impliedby $)} Thus, $ x \in (A \cap B) \setminus C $. \\
+        \\ 
+        Since both sides of the conditional are true, it holds that $ (A \cap B) \setminus C = (A \setminus C) \cap (B \setminus C) $. 
+    \end{proof} 
+\end{minipage}%
+}\par
+Finally, there are blue boxes to indicate when instructions aren't obvious from the question itself, or if there are similar items that can be grouped together.\par
+\parindent=25pt \transparent{0.5}
+    \colorbox{CornflowerBlue}{
+    \transparent{1.0}
+    \begin{minipage}[c]{0.9\textwidth}
+        \centering
+        For items \#7 to \#12, we need to reevaluate our life decisions.
+    \end{minipage}
+    }\transparent{1.0}\parindent=0pt \par 
+It's very important to note that this is a \textit{work in progress!} I am human, and I will make mistakes, and I cannot finish doing all the exercises within the span of one day. If you spot anything wrong, 
+please feel free to message me; I will correct it as soon as possible.
+\pagebreak 
+
+\section*{2.3: The Probability Function} 
+\begin{enumerate}
+    \item According to a family-oriented lobbying group, there is too much crude language and violence on television. Forty-two percent of the programs they screened
+    had language they found offensive, 27\% were too violent, and 10\% were considered excessive in both language and violence. What percentage of programs did comply with
+    the group's standards?\begin{solution}
+        Consider selecting a random televsion show among the ones the lobbying group surveyed, and let \(A\) be the event in which it has offensive language, and \(B\) be the 
+        event in which it has excessive violence. Then, \(P(A) = 0.42\), \(P(B) = 0.27\), and \(P(A\cap{}B) = 0.1\). We are asked to look for the percentage of programs that 
+        complied with the group's standards, i.e.\ ones that do not contain either offensive language or excessive violence. The percentage of shows that contain either is given 
+        by \(P(A\cup{}B)\), so the percentage that we want is \(1- P(A\cup{}B)\). By the formula for \(P(A\cup{}B)\), we have\[
+            1 - [P(A) + P(B) - P(A\cap{}B)] = 1 - (0.42 + 0.27 - 0.1) = 1 - 0.59 = 0.41. 
+        \] Thus, the percentage of shows that complied with the group's standards is 41\%. 
+    \end{solution}
+    \item Let A and B be any two events defined on S. Suppose that \(P(A) = 0.4\), \(P(B) = 0.5\), and \(P(A\cap{}B) = 0.1\). What is the probability that \(A\) or \(B\) but not both occur?\begin{solution}
+        Symbolically, we can express the probability of either but not both occuring as \(P(A\cup{}B) - P(A\cap{}B)\). Note that even though the probability for \(P(A\cup{}B)\) already subtracts 
+        \(P(A\cap{}B)\) in its formula, this is to avoid double-counting it. To fully eradicate this probability from the expression, we have to subtract it again, since by definition,
+        any event that is in both \(A\) and \(B\) is also in their union. Thus, by simple substitution, we have\[
+            P(A\cup{}B) - P(A\cap{}B) = P(A) + P(B) - P(A\cap{}B) - P(A\cap{}B) = 0.4 + 0.5 - 0.1 - 0.1 = 0.7. 
+        \] Therefore, the probability than either \(A\) or \(B\) occur but not both is 0.7 or 70\%. 
+    \end{solution}
+    \item Express the following probabilities in terms of \(P(A)\), \(P(B)\), and \(P(A\cap{}B)\).\begin{enumerate}
+        \item \(P(A^C\cup{}B^C)\).\begin{solution}
+            The book actually gives a simplified expression for this already, but let's reason it out here.\par 
+            The problem is asking for events that are either not in \(A\) or not in \(B\). If an event is in either one of these, as long as they are not in the other, they 
+            are still a member of \(A^C\cup{}B^C\). The only way for something to be excluded from this is if it is in \textit{both} \(A\) and \(B\). Thus, we can express 
+            \(P(A^C\cup{}B^C)\) as \(1 - P(A\cap{}B)\).\par
+            This is essentially an intuitive explanation of DeMorgan's Law: \(x\in {(A\cap{}B)}^C \Longleftrightarrow x\in A^C \cup B^C\). 
+        \end{solution}
+        \item \(P\big(A^C\cap{}(A\cup{}B)\big)\).\begin{solution}
+            This solution is different from the one above in that it involves pure algebra.\begin{align*}
+                P\big(A^C\cap{}(A\cup{}B)\big) &= P(A^C) + P(A\cup B) - P\bigl(A^C \cup(A\cup B)\bigr) \\
+                &= 1 - P(A) + P(A) + P(B) - P(A\cap{}B) - P(A^C\cup{}A\cup{}B) \\
+                &= 1 + P(B) - P(A\cap{}B) - [P(A^C) + P(A) + P(B) - P(A^C\cap{}A) - P(A^C\cap{}B) \\
+                &\phantom{=}\,\, - P(A\cap{}B) + P(A^C\cap{}A\cap{}B)] 
+                \intertext{Here, the terms with \(A^C\cap{}A\) cancel out because elements cannot be both in and out of A.}
+                &= 1 + P(B) - P(A\cap{}B) - 1 - P(B) + P(A^C\cap{}B) + P(A\cap{}B) \\ 
+                &= P(A^C\cap{}B).
+            \end{align*} From here though, we have to use reasoning to try and express this with our allowed terms. How can something be in \(B\) and not \(A\)? 
+            Well, we can take all the elements of \(B\) and remove those which are also in \(A\). We know that elements in both sets are given by \(A\cap{}B\). 
+            Thus, \(A^C\cap{}B = B - A\cap{}B\), which gives our final answer of \(P(B) - P(A\cap{}B)\). 
+        \end{solution}
+    \end{enumerate} 
+    \parindent=25pt \begin{minipage}[t]{.14\textwidth}
+        \vspace{0pt}
+        \includegraphics[width=2cm]{nerd_maddy.png} 
+    \end{minipage}%
+    \fbox{
+    \begin{minipage}[t]{.76\textwidth}
+        \vspace{0pt}
+        \textbf{Nerd Interjection!} If you're wondering where I pulled the expansion out of in the previous problem, recall that, by \textbf{Theorem 2.3.7} in the book,\[
+            P(A_1\cup{}A_2\cup{}A_3) = \sum_{i=1}^3 P(A_i) - \sum_{i<j} P(A_i\cup{}A_j) + {(-1)}^{3+1} P(A_1\cap{}A_2\cap{}A_3). 
+        \]
+    \end{minipage}%
+    }
+    \item 
+\end{enumerate}
+
+\end{document}

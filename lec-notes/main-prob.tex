@@ -1,0 +1,61 @@
+\documentclass[a4paper]{book}
+\usepackage{amsmath} 
+\usepackage{amsthm, amssymb} 
+\usepackage[light,condensed,math]{iwona}
+\usepackage{titlesec}
+\usepackage{enumerate} 
+\usepackage{graphicx} 
+\usepackage[dvipsnames]{xcolor}
+\usepackage{transparent} 
+\usepackage{tikz} 
+\usepackage{cancel} 
+\usepackage[T1]{fontenc}
+\usepackage{mdframed}
+
+\title{calculus lecture notes} 
+\author{Emily Limlengco} 
+
+\fboxsep=4pt
+\RenewDocumentCommand{\footnoterule}{}{\vfill\kern-3pt \hrule width 0.4\columnwidth\kern2.6pt} %yoinked from LSE
+
+\RenewDocumentCommand{\labelitemi}{}{$\rightarrow$}
+\RenewDocumentCommand{\labelenumi}{}{\colorbox{pink}{\textbf{\arabic{enumi}}}}
+\RenewDocumentCommand{\labelenumii}{}{\transparent{0.5}\colorbox{CornflowerBlue}{\transparent{1.0}\textbf{\alph{enumii}}}}
+
+\NewDocumentEnvironment{solution}{}{%
+    \RenewDocumentCommand{\qedsymbol}{}{$\blacksquare$}
+    \begin{proof}[Solution]
+}{\end{proof}}
+
+\newcounter{example}[section]
+\NewDocumentCommand{\example}{}{\stepcounter{example}\textbf{\textsc{Example~\theexample. }}}
+
+\newcounter{theo}[section] %yoinked from: https://texdoc.org/serve/mdframed/0
+\newenvironment{theo}[1][]{%
+    \stepcounter{theo}%
+    \ifstrempty{#1}%
+    {\mdfsetup{%
+        frametitle={%
+            \tikz[baseline= (current bounding box.east),outer sep=0pt]
+            \node[anchor=east,rectangle,fill=blue!20]
+            {\strut{}~Theorem~\thetheo~};}}
+    }%
+    {\mdfsetup{%
+        frametitle={%
+            \tikz[baseline= (current bounding box.east),outer sep=0pt]
+            \node[anchor=east,rectangle,fill=blue!20]
+        {\strut{}~Theorem~\thetheo:~#1};}}%
+    }%
+    \mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+        linewidth=2pt,topline=true,
+        frametitleaboveskip=\dimexpr-\ht\strutbox\relax,}
+    \begin{mdframed}[]\relax%
+}{\end{mdframed}}
+
+\includeonly{basic-probability}
+
+\begin{document} 
+
+\include{basic-probability}
+
+\end{document} 
