@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1711544780.19711 "c:/Users/Noah/Documents/ADMU/probability/prob-exercises/chap2/chap2-exercises.tex" "chap2-exercises.pdf" "chap2-exercises" 1711544783.14674 0
+["pdflatex"] 1711686449.73329 "c:/Users/Noah/Documents/ADMU/probability/prob-exercises/chap2/chap2-exercises.tex" "chap2-exercises.pdf" "chap2-exercises" 1711686451.10162 0
   "C:/Users/Noah/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711112169 278479 759c2fd4878b3cecbd7d06fc300e850b ""
   "C:/Users/Noah/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710387013 24232631 dac795b3d1bdc6f8d687e312eb564c07 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc" 1280852356 2027 f8708480c25b8150843bb94b8b39c93f ""
@@ -24,7 +24,6 @@
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacli.pfb" 1280852409 140620 b2b53535a3c1e4b5c7ed968806b15360 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacm.pfb" 1280852409 143968 fdb54fed42ac663db541a601cf28ad64 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
-  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty" 1643997108 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -95,7 +94,6 @@
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty" 1686931788 88371 d84032c0f422c3d1e282266c01bef237 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty" 1686931788 4474 b811654f4bf125f11506d13d13647efb ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty" 1686931788 2444 0d0c1ee65478277e8015d65b86983da2 ""
-  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/auxhook/auxhook.sty" 1576538732 3935 57aa3c3e203a5c2effb4d2bd2efbc323 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1705273579 20144 147463a6a579f4597269ef9565205cfe ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty" 1705273578 5119 a04a8b68ab4f6ce800a41f7f8012a10e ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo" 1705273578 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
@@ -137,12 +135,10 @@
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1673775190 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty" 1700599895 3468 0ef513f22d965f96b06adb5cff671cd7 ""
-  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/transparent/transparent-nometadata.sty" 1674488802 4212 8da4873548cbd3f1cdb053c708e8aa7e ""
-  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/transparent/transparent.sty" 1674488802 1918 c8d1ecb3722721d6f624992cbc042b70 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/Noah/Documents/ADMU/probability/prob-exercises/chap2/chap2-exercises.tex" 1711544778 12842 e2ec9776ad7df55c15736b2ceac961a6 ""
-  "chap2-exercises.aux" 1711544782 214 4f0ee130354e90a16e88fb49a5e6d36b "pdflatex"
-  "chap2-exercises.tex" 1711544778 12842 e2ec9776ad7df55c15736b2ceac961a6 ""
+  "c:/Users/Noah/Documents/ADMU/probability/prob-exercises/chap2/chap2-exercises.tex" 1711686447 16116 687d5755a84ae33e59eb4f8a2489546a ""
+  "chap2-exercises.aux" 1711686450 416 b2ff3bb265865aada806728979ae3c40 "pdflatex"
+  "chap2-exercises.tex" 1711686447 16116 687d5755a84ae33e59eb4f8a2489546a ""
   "nerd_maddy.png" 1698845758 79649 a6aa56ecff4d9a74f54799d0ae340094 ""
   (generated)
   "chap2-exercises.aux"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.14)  27 MAR 2024 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.14)  29 MAR 2024 12:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -187,13 +187,7 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent.sty
-Package: transparent 2022-10-27 v1.5 Transparency with color stacks
- (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent-nometadata.sty
-Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
- (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-))) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen165
 \pgfutil@tempdimb=\dimen166
@@ -604,26 +598,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--74
 {C:/Users/Noah/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ex-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc} <./nerd_maddy.png>] [2]
 File: nerd_maddy.png Graphic file (type png)
 <use nerd_maddy.png>
-Package pdftex.def Info: nerd_maddy.png  used on input line 131.
+Package pdftex.def Info: nerd_maddy.png  used on input line 130.
 (pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
- [3] (chap2-exercises.aux)
+ [3] [4] (chap2-exercises.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15714 strings out of 474436
- 308902 string characters out of 5742426
+ 15681 strings out of 474436
+ 307630 string characters out of 5742426
  1945190 words of memory out of 5000000
- 37733 multiletter control sequences out of 15000+600000
+ 37711 multiletter control sequences out of 15000+600000
  614590 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,87p,1266b,370s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacl.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacli.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacm.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on chap2-exercises.pdf (3 pages, 169022 bytes).
+ 84i,12n,87p,1266b,767s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacl.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacli.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacm.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on chap2-exercises.pdf (4 pages, 169149 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

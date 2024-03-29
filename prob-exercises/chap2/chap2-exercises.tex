@@ -7,7 +7,7 @@
 \usepackage{enumerate} 
 \usepackage{graphicx}
 \usepackage[dvipsnames]{xcolor}
-\usepackage{transparent} \usepackage{tikz} 
+\usepackage{tikz} 
 \usepackage{cancel}
 \usepackage{parskip}
 \usepackage[condensed,light,math]{iwona}
@@ -22,7 +22,7 @@
 
 \RenewDocumentCommand{\labelitemi}{}{$\rightarrow$}
 \RenewDocumentCommand{\labelenumi}{}{\colorbox{pink}{\textbf{\arabic{enumi}}}}
-\RenewDocumentCommand{\labelenumii}{}{\transparent{0.5}\colorbox{CornflowerBlue}{\transparent{1.0}\textbf{\alph{enumii}}}}
+\RenewDocumentCommand{\labelenumii}{}{\colorbox{CornflowerBlue!50}{\textbf{\alph{enumii}}}}
 
 \NewDocumentEnvironment{solution}{}{%
     \RenewDocumentCommand{\qedsymbol}{}{$\blacksquare$}
@@ -73,14 +73,13 @@ nonetheless relevant proofs. So far, these two are my only two gimmicks, but I m
 \end{minipage}%
 }\par
 Finally, there are blue boxes to indicate when instructions aren't obvious from the question itself, or if there are similar items that can be grouped together.\par
-\parindent=25pt \transparent{0.5}
-    \colorbox{CornflowerBlue}{
-    \transparent{1.0}
+\parindent=25pt
+    \colorbox{CornflowerBlue!50}{
     \begin{minipage}[c]{0.9\textwidth}
         \centering
         For items \#7 to \#12, we need to reevaluate our life decisions.
     \end{minipage}
-    }\transparent{1.0}\parindent=0pt \par 
+    }\parindent=0pt \par 
 It's very important to note that this is a \textit{work in progress!} I am human, and I will make mistakes, and I cannot finish doing all the exercises within the span of one day. If you spot anything wrong, 
 please feel free to message me; I will correct it as soon as possible.
 \pagebreak 
@@ -162,8 +161,57 @@ please feel free to message me; I will correct it as soon as possible.
     \end{proof}
     Note that you could also solve this by using the expansion given by \textbf{Theorem 2.3.7}, but this way is a little bit more intuitive (just a little bit more). It 
     \textit{should} give the same answer as the one above. 
-    \item Let \(A_1\), \(A_2\), \ldots, \(A_n\) be a series of events for which \(A_i \cap{}A_j = \varnothing\) if \(i\neq{}j\) and \(A_1\cup{}A_2\cup\cdots{}A_n = S\). 
-    Let \(B\) be any event defined on \(S\). Express \(B\) as a union of intersections.
+    \item Events \(A\) and \(B\) are defined on a sample space \(S\) such that \(P\bigl({(A\cup{}B)}^C\bigr) =0.5\) and \(P(A\cap{}B) = 0.2\). What is
+    the probability that either \(A\) or \(B\) but not both will occur?\begin{solution}
+        We know that the probability that either one of the events but not both will occur is given by \(P(A\cup{}B) - P(A\cap{}B)\), from item \#2 above. Thus, we can solve
+        for this by substituting values. We can deduce that \(P(A\cup{}B) = 0.5 \) since the probability of its complement is 0.5 as well, thus \(1 - 0.5 = 0.5\). This gives us\[
+            P(\text{either occuring but not both}) = P(A\cup{}B) - P(A\cap{}B) = 0.5 - 0.2 = 0.3. 
+        \] Therefore, the probability that either \(A\) or \(B\) occur but not both is 0.3 or 30\%. 
+    \end{solution}
+    \item Let \(A_1\), \(A_2\), \ldots, \(A_n\) be a series of events for which \(A_i \cap{}A_j = \emptyset\) if \(i\neq{}j\) and \(A_1\cup{}A_2\cup\cdots{}\cup{}A_n = S\). 
+    Let \(B\) be any event defined on \(S\). Express \(B\) as a union of intersections.\begin{solution}
+        If \(B\) is any event defined on \(S\), then it could have ``components'' all across \(A_1\), \(A_2\), \ldots, \(A_n\), since the union of all these events is what makes up \(S\). 
+        The problem also tells us that all these events are mutually exclusive, so the probability of any component of \(B\) that is a subset of a given \(A_i\) will likewise be exclusive 
+        from any component of \(B\) that is a subset of a different \(A_j\). We can therefore fully express \(B\) as the union of all these components, giving us\[
+            B = (A_1\cap{}B)\cup(A_2\cap{}B)\cup\cdots\cup(A_n\cap{}B)
+        \]as our expression for \(B\) as a union of intersections. 
+    \end{solution}
+    \item Draw the Venn diagrams that would correspond to the following equations:\begin{enumerate}
+        \item \(P(A\cap{}B) = P(B)\).\begin{figure}[h]
+            \centering
+            \begin{tikzpicture}
+                \path[draw]
+                    (0,0) -- (5,0) -- (5,3.2) -- (0,3.2) -- cycle; 
+                \draw
+                    (3,1.6) circle[radius=1.4];
+                \filldraw[color=black,fill=Periwinkle!30]
+                    (2.7,1.6) circle[radius=0.7]; 
+                \node 
+                    at (1.2,1.6) {A}; 
+                \node 
+                    at (3.7,1.6) {B}; 
+            \end{tikzpicture}
+            \caption{Venn diagram showing \(P(A\cap{}B) = P(B)\), with the indicated probability highlighted.}
+        \end{figure}
+        \item \(P(A\cup{}B) = P(B)\).\begin{figure}[h]
+            \centering
+            \begin{tikzpicture}
+                \path[draw]
+                    (0,0) -- (5,0) -- (5,3.2) -- (0,3.2) -- cycle; 
+                \filldraw[color=black,fill=Periwinkle!30]
+                    (3,1.6) circle[radius=1.4];
+                \draw
+                    (2.7,1.6) circle[radius=0.7]; 
+                \node 
+                    at (1.2,1.6) {B}; 
+                \node 
+                    at (3.7,1.6) {A}; 
+            \end{tikzpicture}
+            \caption{Venn diagram showing \(P(A\cup{}B) = P(B)\), with the indicated probability highlighted.}
+        \end{figure}
+    \end{enumerate}
+    \item In the game of ``odd man out'' each player tosses a fair coin. If all the coins turn up the same except for one, the player tossing the different coin is declared the
+    odd man out and is eliminated from the contest. Suppose that three people are playing. What is the probability that someone will be eliminated on the first toss?
 \end{enumerate}
 
 \end{document}

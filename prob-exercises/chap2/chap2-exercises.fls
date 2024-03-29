@@ -63,12 +63,6 @@ INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.l
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.def
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.def
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.def
-INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\transparent\transparent.sty
-INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\transparent\transparent.sty
-INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\transparent\transparent-nometadata.sty
-INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\transparent\transparent-nometadata.sty
-INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
@@ -292,5 +286,3 @@ INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\fonts\type1\nowacki\iwona\iwon
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\fonts\type1\nowacki\iwona\iwonacm.pfb
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
-INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT C:\Users\Noah\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
