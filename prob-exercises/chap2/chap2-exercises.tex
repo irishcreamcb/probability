@@ -125,7 +125,7 @@ please feel free to message me; I will correct it as soon as possible.
             Thus, \(A^C\cap{}B = B - A\cap{}B\), which gives our final answer of \(P(B) - P(A\cap{}B)\). 
         \end{solution}
     \end{enumerate} 
-    \parindent=25pt \begin{minipage}[t]{.14\textwidth}
+    \begin{minipage}[t]{.14\textwidth}
         \vspace{0pt}
         \includegraphics[width=2cm]{nerd_maddy.png} 
     \end{minipage}%
@@ -151,8 +151,8 @@ please feel free to message me; I will correct it as soon as possible.
     \item Suppose that three fair dice are tossed. Let \(A_i\) be the event that a 6 shows on the \(i^\text{th}\) die, \(i = 1, 2, 3\). Does
     \(P(A_1\cup{}A_2\cup{}A_3) = \frac{1}{2}\)? Explain.\begin{proof}[Explanation]
         At first glance, this might seem true because \(A_1\), \(A_2\), and \(A_3\) all have the same probability of rolling a 6, which is \(\frac{1}{6}\), so multiplying this
-        probability by 3 gives us \(\frac{1}{2}\). However, this wouldn't represent \(P(A_1\cup{}A_2\cup{}A_3)\), because these events are not mutually exclusive. You can roll a 6
-        on any one of these dice and still get a 6 on another. We can only add probabilities like that for unions when they are exclusive from each other.\par 
+        probability by 3 (for the three dice) gives us \(\frac{1}{2}\). However, this wouldn't represent \(P(A_1\cup{}A_2\cup{}A_3)\), because these events are not mutually exclusive. You can roll a 6
+        on any one of these dice and still get a 6 on another. We can only add probabilities like that for unions when they are exclusive.\par 
         Rather, this probability should be interpreted as the probability that 
         \textit{at least} one of the dice shows up as 6. The only way this wont happen is if all of them aren't 6, which we can interpret as \(P(A_1^C\cap{}A_2^C\cap{}A_3^C)\). 
         Subtracting this by 1 should give us the probability of \(A_1\cup{}A_2\cup{}A_3\). Thus,\[
@@ -160,7 +160,7 @@ please feel free to message me; I will correct it as soon as possible.
         \] which proves the statement is false. 
     \end{proof}
     Note that you could also solve this by using the expansion given by \textbf{Theorem 2.3.7}, but this way is a little bit more intuitive (just a little bit more). It 
-    \textit{should} give the same answer as the one above. 
+    \textit{should} give the same answer as the one above.
     \item Events \(A\) and \(B\) are defined on a sample space \(S\) such that \(P\bigl({(A\cup{}B)}^C\bigr) =0.5\) and \(P(A\cap{}B) = 0.2\). What is
     the probability that either \(A\) or \(B\) but not both will occur?\begin{solution}
         We know that the probability that either one of the events but not both will occur is given by \(P(A\cup{}B) - P(A\cap{}B)\), from item \#2 above. Thus, we can solve
@@ -211,7 +211,72 @@ please feel free to message me; I will correct it as soon as possible.
         \end{figure}
     \end{enumerate}
     \item In the game of ``odd man out'' each player tosses a fair coin. If all the coins turn up the same except for one, the player tossing the different coin is declared the
-    odd man out and is eliminated from the contest. Suppose that three people are playing. What is the probability that someone will be eliminated on the first toss?
+    odd man out and is eliminated from the contest. Suppose that three people are playing. What is the probability that someone will be eliminated on the first toss?\begin{solution}
+        Since there are only three people playing, the only way for someone to not be eliminated is if all their coins are the same. If we let \(A\) be the event that someone is 
+        eliminated on the first toss, then \(A^C\) is the event that no one is, and \(P(A)\) will be given by \(1 - P (A^C)\). Out of all the possible outcomes 
+        of the coin flips (of which there are 8: \(\lbrace{}\)HHH, TTT, HTT, HHT, HTH, THH, TTH, THT\(\rbrace{}\)),
+        two of them have all three coins showing up as the same face. Thus, \(P(A^C) = \frac{1}{4}\), so the probability that someone is eliminated
+        on the first round is \(\frac{3}{4}\), or 0.75. 
+    \end{solution}
+    \begin{minipage}[t]{.14\textwidth}
+        \vspace{0pt}
+        \includegraphics[width=2cm]{nerd_maddy.png} 
+    \end{minipage}%
+    \fbox{
+    \begin{minipage}[t]{.76\textwidth}
+        \vspace{0pt}
+        \textbf{Nerd Interjection!} You'll notice that the previous problem essentially boiled down to a counting problem. If you're familiar with combinatorics, you might remember there's 
+        a handy way of counting ways to do something that involve successes and failures: the \textbf{binomial coefficients}. We'll see later that there's a way of formalizing a 
+        theorem for similar situations, which should give us solutions like this next one.
+    \end{minipage}%
+    }\begin{solution}
+        The probability that the result of one player's coin toss is different from the other two's is described by the binomial distribution. We have 0.5 for the probability of either 
+        heads or tails, three trials (because there are three players), and we wish to find one ``success'' (i.e.\ that player's result is different). Thus,\[
+            \binom{3}{1} {(1-0.5)}^{3-1} 0.5^{1} = 3 \cdot 0.25 \cdot 0.5 = 0.375~\text{or}~\frac{3}{8}.   
+        \] But wait! This isn't our answer from earlier. Well, that's because we need to multiply it by 2. ``Success'' here can mean either heads or tails, depending on what
+        the other two flipped, but we've only calculated for one of the cases (let's say heads). Thus, without loss of generality\footnote{These four words are \textit{very} important in combinatorics. 
+        Look it up if you're interested! I'm not great at explaining it.}, 
+        we say that the case in which the player eliminated flips tails is the same as the case where they flip heads, and we multiply this result by 2, giving us \(\frac{3}{4}\) or 0.75. 
+    \end{solution}
+    We can actually also solve item \#{}5 with the binomial distribution, but we'll save that for when we actually learn the binomial distribution because it's a bit more involved than 
+    this one is. But if you're curious, here are the funny numbers:\[
+        \binom{3}{1} {\biggl(\frac{1}{6}\biggr)}^1 {\biggl(\frac{5}{6}\biggr)}^{3-1} +  \binom{3}{2} {\biggl(\frac{1}{6}\biggr)}^2 {\biggl(\frac{5}{6}\biggr)}^{3-2} + \binom{3}{3} {\biggl(\frac{1}{6}\biggr)}^3 
+        {\biggl(\frac{5}{6}\biggr)}^{3-3} = \frac{91}{216},
+    \] which is exactly the answer we got earlier (that I was too lazy to simplify). 
+    \item An urn contains twenty-four chips, numbered 1 through 24. One is drawn at random. Let \(A\) be the event that the number is divisible by 2 and let \(B\) be the event
+    that the number is divisible by 3. Find \(P(A\cup{}B)\).\begin{solution}
+        There are 12 numbers divisible by 2 within the range of \([1,24]\), which means the probability of drawing one is \(\frac{12}{24} = \frac{1}{2} \). Likewise, there are 
+        8 numbers divisible by 3 within the range, which gives the probability of \(\frac{8}{24} = \frac{1}{3}\). We know that \(P(A\cup{}B) = P(A) + P(B) - P(A\cap{}B)\), 
+        which means we just need to solve for the intersection of these two events. We know that if a number is divisible by both 2 and 3, then it is divisible by 6. Thus, \(P(A\cap{}B)\)
+        is equivalent to \(P(\text{the number drawn is divisible by 6})\). There are 4 such numbers in the given range, which gives \(\frac{4}{24} = \frac{1}{6}\) for our probability. 
+        Finally, substituting these values gives us \(
+            \frac{1}{2} + \frac{1}{3} - \frac{1}{6} = \frac{2}{3}
+        \) for the probability that a number is divisible by 2 or 3. 
+    \end{solution}
+    \item If State's football team has a 10\% chance of winning Saturday's game, a 30\% chance of winning two weeks from now, and a 65\% chance of losing both games, what
+    are their chances of winning exactly once?\begin{solution}
+        Let \(A\) be the event that they win Saturday's game and \(B\) be the event that they win two weeks from now. Then, \(P(A) = 0.1\), \(P(B) = 0.3\), and \(P(A^C\cap{}B^C) = 0.65\).
+        We need to find the probability that they win one but not the other, which, as we've shown repeatedly thus far, is \(P(A\cup{}B) - P(A\cap{}B)\). We know by DeMorgan's laws that 
+        \({(A\cup{}B)}^C = A^C\cap{}B^C\), so \(1-P(A^C\cap{}B^C) = 1-0.65 = 0.35 = P(A\cup{}B)\). Now, we just need to find \(P(A\cap{}B)\), which thankfully we have a formula for, given 
+        \(P(A)\), \(P(B)\), and \(P(A\cup{}B)\). Therefore,\[
+            P(A\cup{}B) - P(A\cap{}B) = 0.35 - (0.1 + 0.3 - 0.35) = 0.35 - 0.5 = 0.3 
+        \] is the probability that the team will win exactly once. 
+    \end{solution}
+    \item Events \(A_1\) and \(A_2\) are such that \(A_1 \cup{} A_2 = S\) and \(A_1 \cap A_2 = \emptyset\). Find \(p_2\) if \(P(A_1) = p_1\), \(P(A_2) = p_2\), and
+    \(3p_1 - p_2 = \frac{1}{2}\).\begin{solution}
+        \(A_1 \cup{} A_2 = S\) and \(A_1 \cap A_2 = \emptyset\) tell us that \(p_1\) and \(p_2\) are mutually exclusive, and that \(P(A_1\cup{}A_2) = P(S) = 1\). Thus, \(p_1 + p_2 = 1\). 
+        We can rewrite this equation as \(p_1 = 1 - p_2\) and substitute it into the given equation. Then,\[
+            3(1-p_2) - p_2 = \frac{1}{2} \Longleftrightarrow
+            3 - 4p_2 = \frac{1}{2} \Longleftrightarrow
+            -4p_2 = -\frac{5}{2} \Longleftrightarrow
+            p_2 = \frac{5}{8},
+        \] which gives us our value for \(p_2\). 
+    \end{solution}
+    \item Consolidated Industries has come under considerable pressure to eliminate its seemingly discriminatory hiring practices. Company officials have agreed that during
+    the next five years, 60\% of their new employees will be women and 30\% will be minorities. One out of four new employees, though, will be a white man. What percentage
+    of their new hires will be minority women?\footnote{I changed the phrasing of this question because it goes against my morals to use the word ``females''.}\begin{solution}
+        
+    \end{solution}
 \end{enumerate}
 
 \end{document}
