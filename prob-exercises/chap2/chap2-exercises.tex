@@ -347,5 +347,28 @@ please feel free to message me; I will correct it as soon as possible.
 
 \pagebreak
 \section*{2.4: Conditional Probability}
+\textit{This section has 54 exercises, so it's probably unreasonable for me to finish them all, but I'll see how far I can get before getting bored. }
+\begin{enumerate}
+    \item Suppose that two fair dice are tossed. What is the probability that the sum equals 10 given that it exceeds 8?\begin{solution}
+        Let the probability that the result is 10 be \(A\). \(P(A) = \frac{3}{36}\), because there are three combinations that give 10, namely \(\lbrace(4,6),(5,5),(6,4)\rbrace\). Meanwhile, let the probability 
+        that the sum  exceeds 8 be \(B\). \(P(B) = \frac{10}{36}\), because there are ten combinations that result in a sum above 8 (which I won't list anymore). Since 10 is always greater than 8, 
+        \(P(A\cap{}B) = P(A)\). Thus, substituting, we have\[
+            P(A|B) = P(A) / P(B) = \frac{3}{36} \cdot \frac{36}{10} = \frac{3}{10},
+        \] for the probability that the sum of the dice is 10 given that it is greater than 8. 
+    \end{solution}
+    \item Find \(P(A\cap{}B)\) if \(P(A) = 0.2\), \(P(B) = 0.4\), and \(P(A|B) + P(B|A) =0.75\).\begin{solution}
+        We can solve for this by simply substituting the first two equations into the last one.\[
+            \frac{P(A\cap{}B)}{0.4} + \frac{P(B\cap{}A)}{0.2} =0.75 \Longleftrightarrow P(A\cap{}B) \big(7.5\big) = 0.75 \Longleftrightarrow P(A\cap{}B) = 0.1. 
+        \] Simplification of fractions has been omitted for space. 
+    \end{solution}
+    \item If \(P(A|B) < P(A)\), show that \(P(B|A) < P(B)\).\begin{proof}
+        Finally, some proving so I can feel alive again. Here, we just do straightforward algebra. By the given,\[
+            \frac{P(A\cap{}B)}{P(B)} < P(A) \Longleftrightarrow
+            P(A\cap{}B) < P(A)\,P(B)
+        \] Now, if we try to solve for \(P(B|A)\), we get\[
+            P(B|A) = \frac{P(B\cap{}A)}{P(A)} = \frac{P(A\cap{}B)}{P(A)}< \frac{P(A)\,P(B)}{P(A)} = P(B),
+        \] which proves the statement. 
+    \end{proof}
+\end{enumerate}
 
 \end{document}
