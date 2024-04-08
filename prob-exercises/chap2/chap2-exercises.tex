@@ -6,12 +6,14 @@
 \usepackage{titlesec}
 \usepackage{enumerate} 
 \usepackage{graphicx}
+
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tikz} 
 \usepackage{cancel}
 \usepackage{parskip}
 \usepackage[condensed,light,math]{iwona}
 \usepackage[T1]{fontenc}
+\usepackage{booktabs}
 
 \title{probability exercises}
 \author{emilianna louise abundo limlengco} 
@@ -369,6 +371,78 @@ please feel free to message me; I will correct it as soon as possible.
             P(B|A) = \frac{P(B\cap{}A)}{P(A)} = \frac{P(A\cap{}B)}{P(A)}< \frac{P(A)\,P(B)}{P(A)} = P(B),
         \] which proves the statement. 
     \end{proof}
+    \item Let \(A\) and \(B\) be two events such that \(P\bigl({(A\cup{}B)}^C\bigr) = 0.6\) and \(P(A\cap{}B) = 0.1\). Let \(E\) be the event that either \(A\) or \(B\) but not both 
+    occur. Find \(P(E|A\cup{}B)\).\begin{solution}
+        We know that the probability of either but not both occuring is \(P(A\cup{}B) - P(A\cap{}B)\). With the given values, this equates to \[
+            P(E) = \bigl[1 - P\bigl({(A\cup{}B)}^C\bigr) \bigr] - P(A\cap{}B) = 1 - 0.6 -0.1 = 0.3.
+        \] By the conditional probability, \(P(E|A\cup{}B) = P\bigl(E\cap{}(A\cup{}B)\bigr) / P(A\cup{}B) \), so we need to find \(P\bigl(E\cap{}(A\cup{}B)\bigr)\). However, we know that 
+        \(E\) is a subset of \(A\cup{}B\), so the probability of their intersection is just equal to the probability of the smaller set, which is 0.3. Thus, dividing this by the probability 
+        of \(A\cup{}B\), which is 0.4, gives us 0.75 or \(\frac{3}{4}\) for the probability of only one occuring given that at least one has already occurred. 
+    \end{solution}
+    \item Suppose that in \textbf{Example 2.4.2} (the one with children, gender, and birth order), we ignored the ages of the children and distinguished only \textit{three} family types: (boy, boy), 
+    (girl, boy), and (girl, girl). Would the conditional probability of both children being boys given that at least one is a boy be different from the answer found in the book? Explain.\begin{proof}[Explanation]
+        The probabilites would not change. Even if we remove the distinction between (boy, girl) and (girl, boy) families by placing them all under a single (girl, boy) category, 
+        families of this type would be twice as likely to appear as the other two. All we are really changing is the way we approach the problem. 
+    \end{proof}
+    \begin{minipage}[t]{.14\textwidth}
+        \vspace{0pt}
+        \includegraphics[width=2cm]{nerd_maddy.png} 
+    \end{minipage}%
+    \fbox{
+    \begin{minipage}[t]{.76\textwidth}
+        \vspace{0pt}
+        \textbf{Nerd Interjection!} The book example and this problem distinguish between combinations and permutations, which are more studied in combinatorics. For our purposes, it's important 
+        to note that if we are looking at probabilities of permutations but are only interested in how many of a certain item appear per permutation, we have to account for how many permutations will 
+        have the same amount of items that we desire. This idea will become more important when we look at the binomial distribution. 
+    \end{minipage}%
+    }
+    \item Two events, \(A\) and \(B\), are defined on a sample space \(S\) such that \(P(A|B) = 0.6\), \(P(\text{At least one event occurs}) = 0.8\), and \(P(\text{Exactly one event occurs})=0.6\). 
+    Find \(P(A)\) and \(P(B)\).\begin{solution}
+        From the given, we have \(P(A\cup{}B) = 0.8 \) and \(P(A\cup{}B) - P(A\cap{}B) = 0.6\), so \(P(A\cap{}B) = 0.2\). Then, \(P(A|B) = P(A\cap{}B)/P(B) = 0.2/P(B) = 0.6\), so \(P(B) = \frac{1}{3}\). 
+        Substituting this into our formula for \(P(A\cup{}B)\) gives us \(0.8 = P(A) + \frac{1}{3} - 0.2 \), so \(P(A) = \frac{2}{3}\). 
+    \end{solution}
+    \item An urn contains one red chip and one white chip. One chip is drawn at random. If the chip selected is red, that chip together with two additional red chips are put back into the urn. 
+    If a white chip is drawn, the chip is returned to the urn. Then a second chip is drawn. What is the probability that both selections are red?\begin{solution}
+        
+    \end{solution}
+    \item Given that \(P(A) = a\) and \(P(B) = b\), show that \[
+        P(A|B) \geq \frac{a+b-1}{b}.  
+    \]\begin{proof}
+        We know that \(P(A|B) = P(A\cap{}B)/b\). We also know that \(P(A\cap{}B) = a + b - P(A\cup{}B)\). Since \(P(A\cup{}B)\) is a probability, it must be less than or equal to 1. Thus, \(P(A\cap{}B) \geq a + b - 1\). 
+        Substituting this into the conditional probability formula gives us\[
+            P(A|B) = \frac{P(A\cap{}B)}{b} \geq \frac{a+b-1}{b}, 
+        \] which proves the statement.
+    \end{proof}
+    \item An urn contains one white chip and a second chip that is equally likely to be white or black. A chip is drawn at random and returned to the urn. Then a second chip is drawn. What is the probability that a
+    white appeared on the first draw?\begin{solution}
+        
+    \end{solution}
+    \item Suppose events \(A\) and \(B\) are such that \(P(A\cap{}B) = 0.1\) and \(P\bigl({(A\cup{}B)}^C\bigr)=0.3\). If \(P(A) =0.2\), what does \(P\bigl((A\cap{}B)|{(A\cup{}B)}^C\bigr)\) equal?\begin{solution}
+        
+    \end{solution}
+    \item One hundred voters were asked their opinions of two candidates, \(A\) and \(B\), running for mayor. Their response to three questions are summarized below:\begin{center}
+        \begin{tabular}{lc}
+            \toprule
+            & \textbf{Number Saying ``Yes''} \\
+            \midrule
+            Do you like \(A\)? & 65 \\ 
+            Do you like \(B\)? & 55 \\ 
+            Do you like both? & 25 \\
+            \bottomrule
+        \end{tabular}
+    \end{center}\begin{enumerate}
+        \item What is the probability that someone likes neither?
+        \item What is the probability that someone likes exactly one? 
+        \item What is the probability that someone likes at least one? 
+        \item What is the probability that someone likes at most one? 
+        \item What is the probability that someone likes exactly one given that they like at least one? 
+        \item Of those who like at least one, what proportion like both? 
+        \item Of those who do not like \(A\), what proportion like \(B\)?
+    \end{enumerate}
+    \item A fair coin is tossed three times. What is the probability that at least two heads will occur given that at most two heads have occurred? 
+    \item Two fair dice are rolled. What is the probability that the number on the first die was at at least as large as 4 given that the sum of the two dice was 8? 
+    \item Four cards are dealt from a standard fifty-two-card poker deck. What is the probability that all four are aces given that at least three are aces? (Note: There are 270,725 different 
+    sets of four cards that can be dealt. Assume that the probability associated with each of those hands is \(1/270,725\)).
 \end{enumerate}
 
 \end{document}

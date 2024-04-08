@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.14)  1 APR 2024 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.14)  8 APR 2024 17:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -435,27 +435,46 @@ LaTeX Info: Font shape T1/iwonalc/mx/it has incorrect series value `mx'.
             It should not contain an `m'! Please correct it.
             Found on input line 35.
 
-)) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+)) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen271
+\lightrulewidth=\dimen272
+\cmidrulewidth=\dimen273
+\belowrulesep=\dimen274
+\belowbottomsep=\dimen275
+\aboverulesep=\dimen276
+\abovetopsep=\dimen277
+\cmidrulesep=\dimen278
+\cmidrulekern=\dimen279
+\defaultaddspace=\dimen280
+\@cmidla=\count301
+\@cmidlb=\count302
+\@aboverulesep=\dimen281
+\@belowrulesep=\dimen282
+\@thisruleclass=\count303
+\@lastruleclass=\count304
+\@thisrulewidth=\dimen283
+) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count301
+\l__color_backend_stack_int=\count305
 \l__pdf_internal_box=\box65
 ) (chap2-exercises.aux)
 \openout1 = `chap2-exercises.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -493,39 +512,24 @@ LaTeX Font Info:    ... okay on input line 32.
 
 (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
-\scratchdimen=\dimen271
+\scratchcounter=\count306
+\scratchdimen=\dimen284
 \scratchbox=\box66
-\nofMPsegments=\count303
-\nofMParguments=\count304
+\nofMPsegments=\count307
+\nofMParguments=\count308
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count305
-\MPscratchDim=\dimen272
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen285
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
 \everyMPtoPDFconversion=\toks45
 ) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for OT1+iwonalcm on input line 42.
+LaTeX Font Info:    Trying to load font information for OT1+iwonalcm on input line 44.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ot1iwonalcm.fd
 File: ot1iwonalcm.fd 2005/10/05 v1.2 font definition file for OT1/iwonalcm (MW)
 
@@ -540,7 +544,7 @@ LaTeX Info: Font shape OT1/iwonalcm/mx/it has incorrect series value `mx'.
             Found on input line 19.
 
 )
-LaTeX Font Info:    Trying to load font information for OML+iwonalc on input line 42.
+LaTeX Font Info:    Trying to load font information for OML+iwonalc on input line 44.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/iwona\omliwonalc.fd
 File: omliwonalc.fd 2008/07/22 v0.995 font definition file for OML/iwonalc (MW)
 
@@ -550,7 +554,7 @@ LaTeX Info: Font shape OML/iwonalc/mx/it has incorrect series value `mx'.
             Found on input line 11.
 
 )
-LaTeX Font Info:    Trying to load font information for OMS+iwonalc on input line 42.
+LaTeX Font Info:    Trying to load font information for OMS+iwonalc on input line 44.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/iwona\omsiwonalc.fd
 File: omsiwonalc.fd 2008/07/22 v0.995 font definition file for OMS/iwonalc (MW)
 
@@ -560,7 +564,7 @@ LaTeX Info: Font shape OMS/iwonalc/mx/n has incorrect series value `mx'.
             Found on input line 11.
 
 )
-LaTeX Font Info:    Trying to load font information for OMX+iwonalc on input line 42.
+LaTeX Font Info:    Trying to load font information for OMX+iwonalc on input line 44.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/iwona\omxiwonalc.fd
 File: omxiwonalc.fd 2008/07/22 v0.995 font definition file for OMX/iwonalc (MW)
 
@@ -570,26 +574,26 @@ LaTeX Info: Font shape OMX/iwonalc/mx/n has incorrect series value `mx'.
             Found on input line 11.
 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <nerd_maddy.png, id=4, 301.125pt x 301.125pt>
 File: nerd_maddy.png Graphic file (type png)
 <use nerd_maddy.png>
-Package pdftex.def Info: nerd_maddy.png  used on input line 46.
+Package pdftex.def Info: nerd_maddy.png  used on input line 48.
 (pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 
  []
 
@@ -598,36 +602,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--74
 {C:/Users/Noah/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ex-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc} <./nerd_maddy.png>] [2]
 File: nerd_maddy.png Graphic file (type png)
 <use nerd_maddy.png>
-Package pdftex.def Info: nerd_maddy.png  used on input line 130.
+Package pdftex.def Info: nerd_maddy.png  used on input line 132.
 (pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
  [3]
 File: nerd_maddy.png Graphic file (type png)
 <use nerd_maddy.png>
-Package pdftex.def Info: nerd_maddy.png  used on input line 223.
+Package pdftex.def Info: nerd_maddy.png  used on input line 225.
 (pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
  [4] [5]
 File: nerd_maddy.png Graphic file (type png)
 <use nerd_maddy.png>
-Package pdftex.def Info: nerd_maddy.png  used on input line 289.
+Package pdftex.def Info: nerd_maddy.png  used on input line 291.
 (pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
- [6] [7] [8] (chap2-exercises.aux)
+ [6] [7]
+File: nerd_maddy.png Graphic file (type png)
+<use nerd_maddy.png>
+Package pdftex.def Info: nerd_maddy.png  used on input line 389.
+(pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
+ [8] [9] [10] (chap2-exercises.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15682 strings out of 474436
- 307647 string characters out of 5742426
- 1947190 words of memory out of 5000000
- 37712 multiletter control sequences out of 15000+600000
+ 15619 strings out of 474436
+ 305316 string characters out of 5742426
+ 1948190 words of memory out of 5000000
+ 37661 multiletter control sequences out of 15000+600000
  617775 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,1266b,763s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacl.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacli.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacm.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chap2-exercises.pdf (8 pages, 191504 bytes).
+Output written on chap2-exercises.pdf (10 pages, 200005 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
